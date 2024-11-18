@@ -2,6 +2,8 @@
 
 Aplikacja, która oblicza i wizualizuje najkrótszą trasę samochodową pomiędzy dwoma punktami w mieście.
 
+![App Screenshot](/docs/ss.png)
+
 ## Jak to działa?
 
 1. Użytkownik podaje współrzędne geograficzne (szerokość i długość geograficzną) dla punktu początkowego i końcowego.
