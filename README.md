@@ -18,7 +18,6 @@ Aplikacja służy do obliczania najkrótszej trasy między dwoma punktami na pod
 ![App Screenshot](/docs/ss_new.png)
 
 
-
 ## Jak to działa - stara apka?
 
 1. Użytkownik podaje współrzędne geograficzne (szerokość i długość geograficzną) dla punktu początkowego i końcowego.
@@ -27,7 +26,6 @@ Aplikacja służy do obliczania najkrótszej trasy między dwoma punktami na pod
 4. Następnie generowana jest mapa z wyświetleniem trasy, punktów początkowego i końcowego oraz legendą pokazującą całkowitą odległość w kilometrach.
 5. Na końcu mapa jest zapisywana w pliku HTML w folderze docs.
 
-![App Screenshot](/docs/ss.png)
 
 ## Instalacja
 
