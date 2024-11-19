@@ -1,3 +1,5 @@
 folium==0.18.0
 geopy==2.4.1
+networkx==3.4.2
 osmnx==1.9.4
+Requests==2.32.3
