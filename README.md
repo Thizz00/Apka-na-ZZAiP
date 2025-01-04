@@ -48,7 +48,7 @@ Wnioski:
 Pobieranie projektu:
 
 ```bash
- git clone https://github.com/Thizz00/Apka-na-ZZAiP.git
+ git clone https://github.com/Thizz00/Projekt-ZZAiP-Algorytm-Dijkstry.git
 ```
 Instalowanie bibliotek:
 
