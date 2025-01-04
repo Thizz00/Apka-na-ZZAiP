@@ -17,14 +17,30 @@ Aplikacja służy do obliczania najkrótszej trasy między dwoma punktami na pod
 
 ![App Screenshot](/docs/ss_new.png)
 
+## Wyniki testów
 
-## Jak to działa - stara apka?
+Wszystkie testy zakończyły się pomyślnie. Przeprowadzono 3 testy, które trwały łącznie 4 minuty i 50 sekund.
 
-1. Użytkownik podaje współrzędne geograficzne (szerokość i długość geograficzną) dla punktu początkowego i końcowego.
-2. Apka oblicza punkty na mapie, które znajdują się najbliżej zadanych współrzędnych geograficznych użytkownika.
-3. Za pomocą algorytmu Dijkstry program znajduje najkrótszą drogę między tymi dwoma punktami.
-4. Następnie generowana jest mapa z wyświetleniem trasy, punktów początkowego i końcowego oraz legendą pokazującą całkowitą odległość w kilometrach.
-5. Na końcu mapa jest zapisywana w pliku HTML w folderze docs.
+![App Screenshot](/docs/test.png)
+ 
+ 
+Szczegóły testów:
+
+1.	Kraków: Trasa z Wawelu do Bagrów 
+* Oczekiwany zakres odległości: 3.0 - 3.5 km
+* Test zakończony sukcesem
+2.	Gdańsk: Trasa z Długiego Targu do Westerplatte 
+* Oczekiwany zakres odległości: 9.0 - 10.0 km
+* Test zakończony sukcesem
+3.	Wrocław: Trasa z Przejścia Garncarskiego do Hali Stulecia 
+* Oczekiwany zakres odległości: 3.5 - 4.0 km
+* Test zakończony sukcesem
+
+Wnioski:
+
+1.	Algorytm poprawnie wyznacza trasy dla różnych miast i różnych odległości.
+2.	Obliczone odległości mieszczą się w oczekiwanych zakresach dla każdego miasta.
+3.	Testy potwierdzają, że funkcje fetch_osm_data, osm_to_graph, nearest_node, dijkstra i calculate_total_distance działają prawidłowo w różnych scenariuszach.
 
 
 ## Instalacja
@@ -39,7 +55,14 @@ Instalowanie bibliotek:
 ```bash
  pip install -r requirements.txt
 ```
-Odpalanie projektu lokalnie:
+
+Inicjacja testów:
+
+```bash
+ pytest tests.py
+```
+
+Inicjacja aplikacji lokalnie:
 
 ```bash
  python app_new.py
